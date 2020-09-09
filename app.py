@@ -3,8 +3,8 @@ app = Flask(__name__)
 
 
 @app.route('/')
-def hello_world():
-    return 'this is my test page with flask <h1>testing page 1</h1> '
+def index():
+    return '<h1>This is the index page of the blog being developed with Flask</h1>'
 
 if __name__ == '__main__':
     app.run(debug=True)    
