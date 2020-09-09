@@ -1,2 +1,11 @@
-print("hello world")
-# this is a comment 
+from flask import Flask
+app = Flask(__name__)
+
+
+@app.route('/')
+@app.route("index")
+def index():
+    return 'wlecome to my mini blog testing page with flask'
+
+if __name__ = '__main__':
+    app.run(debug=true)    
