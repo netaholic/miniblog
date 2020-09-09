@@ -3,9 +3,8 @@ app = Flask(__name__)
 
 
 @app.route('/')
-@app.route("index")
-def index():
-    return 'wlecome to my mini blog testing page with flask'
+def hello_world():
+    return 'this is my test page with flask '
 
-if __name__ = '__main__':
-    app.run(debug=true)    
+if __name__ == '__main__':
+    app.run(debug=True)    
